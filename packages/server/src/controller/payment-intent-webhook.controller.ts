@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { BadRequestException, Controller, Headers, Post, Req } from '@nestjs/common'
 
 import { helper } from '@heyform-inc/utils'
@@ -6,6 +7,7 @@ import { STRIPE_WEBHOOK_SECRET_KEY } from '@environments'
 import { PaymentService, SubmissionService } from '@service'
 
 @Controller()
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export class PaymentIntentWebhookController {
   constructor(
     private readonly paymentService: PaymentService,
